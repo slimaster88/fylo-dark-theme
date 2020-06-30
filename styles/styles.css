@@ -1,0 +1,155 @@
+/*## Layout
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials отзывы background): hsl(219, 30%, 18%)
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+- White: hsl(0, 0%, 100%)
+## Icons
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)*/
+body {
+  text-align: center;
+  background-color: hsl(217, 28%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  letter-spacing: 1;
+}
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  letter-spacing: 1;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  margin: 20px 20px 0 20px;
+}
+.head-buttons-box {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Raleway", sans-serif;
+}
+.head-button {
+  display: inline-block;
+  margin: 10px 5% 10px 0;
+  margin-top: 30px;
+}
+.illustration {
+  display: block;
+  width: 80%;
+  min-height: 200px;
+  min-width: 270px;
+  margin-left: 10%;
+}
+.illustration-intro {
+  position: relative;
+  top: 50px;
+}
+.illustration-stay-productive {
+  margin: 150px 10% 10px;
+}
+.top-container {
+  background-image: url(../images/bg-curvy-mobile.svg);
+  background-size: 100% 100%;
+  padding: 0 20px;
+}
+.top-h1 {
+  padding-top: 80px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.main-container {
+  background-color: hsl(218, 28%, 13%);
+  padding: 24px 9%;
+}
+.p-1 {
+  margin-top: 0;
+}
+.button {
+  width: 58vw;
+  max-width: 360px;
+  height: 5.5vw;
+  max-height: 30px;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 12px 0 10px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px auto 40px;
+  background: linear-gradient(to right, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+}
+.button:hover {
+  background: linear-gradient(to left, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+}
+.ico {
+  margin-top: 72px;
+}
+.access-ico {
+  width: 20%;
+}
+.security-ico {
+  width: 17%;
+}
+.real-ico {
+  width: 22%;
+}
+.store-ico {
+  width: 22%;
+}
+.stay-productive-box {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.stay-productive-box p {
+  margin-bottom: 10px;
+}
+.stay-productive-box a {
+  color: hsl(176, 68%, 64%);
+  display: inline-block;
+  text-decoration: none;
+  border: solid hsl(176, 68%, 64%);
+  border-width: 0 0 1px 0;
+  padding-bottom: 5px;
+}
+.arrow {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
