@@ -16,7 +16,7 @@ body {
   color: hsl(0, 0%, 100%);
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  font-size: 0.8em;
+  font-size: 0.88em;
   line-height: 1.4;
 }
 h1 {
@@ -28,17 +28,24 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.35em;
   letter-spacing: 1;
   margin-top: 25px;
   margin-bottom: 8px;
   line-height: 1.8;
 }
+h3 {
+  margin-top: 24px;
+  margin-bottom: 0;
+}
 p {
   line-height: 1.5;
   margin: 0;
 }
-
+.main-container {
+  background-color: hsl(218, 28%, 13%);
+  padding: 24px 10% 0;
+}
 .logo {
   position: absolute;
   left: 0;
@@ -83,10 +90,7 @@ p {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
-.main-container {
-  background-color: hsl(218, 28%, 13%);
-  padding: 24px 9%;
-}
+
 .p-1 {
   margin-top: 0;
 }
@@ -131,7 +135,7 @@ p {
   margin-bottom: 10px;
 }
 .stay-productive-box p {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .stay-productive-box a {
   color: hsl(176, 68%, 64%);
@@ -146,10 +150,147 @@ p {
   position: relative;
   top: 4px;
 }
+.profiles-container {
+  padding: 110px 0 0;
+  background-color: hsl(218, 28%, 13%);
+}
+.quotes {
+  background-image: url(../images/bg-quotes.png);
+  background-size: 100% 100%;
+  margin-left: 5px;
+  width: 23px;
+  height: 17px;
+}
+.profile-box {
+  background-color: hsl(219, 30%, 18%);
+  padding: 30px 30px 20px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  box-shadow: 0 5px 30px 0 hsl(219, 30%, 10%);
+}
+.profile-box p {
+  margin-bottom: 20px;
+}
+.ava {
+  width: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  float: left;
+}
+.bottom-container {
+  width: 110%;
+  position: relative;
+  left: -5%;
+  top: 180px;
+  padding: 10px 30px 40px;
+  box-sizing: border-box;
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px 0 hsl(219, 30%, 5%);
+}
+input {
+  width: 58vw;
+  max-width: 360px;
+  height: 5.5vw;
+  max-height: 30px;
+  border-radius: 30px;
+  border-style: none;
+  font-family: "Open Sans", sans-serif;
+  color: lightgrey;
+  font-weight: 400;
+  padding: 14px 24px 12px;
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  margin: 30px auto 0;
+}
+.mail-button {
+  width: 58vw;
+  max-width: 360px;
+  height: 5.5vw;
+  max-height: 30px;
+  border-radius: 30px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 14px 24px 12px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px auto 0;
+  background: linear-gradient(to right, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+}
+.mail-button:hover {
+  background: linear-gradient(to left, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+}
+footer {
+  padding-top: 240px;
+  background-color: hsl(216, 53%, 9%);
+  text-align: left;
+}
+td {
+  padding-right: 10px;
+  vertical-align: top;
+}
+.bottom-logo {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+.location {
+  margin-top: 8px;
+}
+.col-1 {
+  width: 10%;
+}
+.phone-ico {
+  margin-bottom: 10px;
+}
+
+.bottom-box {
+  margin-bottom: 30px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+.bottom-box a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  line-height: 2.5;
+}
+.bottom-box a:hover {
+  color: hsl(186, 62%, 60%);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 10px hsl(186, 62%, 80%);
+}
+.bottom-box1 {
+  margin-bottom: 16px;
+}
+.bottom-box5 {
+  text-align: center;
+}
+.sn-ico {
+  width: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 2px 0;
+}
+.sn-ico:hover {
+  width: 32px;
+  margin: 0;
+  cursor: pointer;
+  filter: invert(71%) sepia(130%) saturate(300%) hue-rotate(155deg)
+    brightness(300%) contrast(87%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-bottom: 10px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(198, 60%, 50%);
 }
+/**/
