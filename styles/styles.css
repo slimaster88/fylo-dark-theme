@@ -1,4 +1,4 @@
-/*## Layout
+/*
 - Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
 - Dark Blue (main background): hsl(218, 28%, 13%)
 - Dark Blue (footer background): hsl(216, 53%, 9%)
@@ -6,10 +6,7 @@
 - Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
 - Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
 - White: hsl(0, 0%, 100%)
-## Icons
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)*/
+*/
 body {
   text-align: center;
   background-color: hsl(217, 28%, 15%);
@@ -58,9 +55,15 @@ p {
   font-family: "Raleway", sans-serif;
 }
 .head-button {
-  display: inline-block;
   margin: 10px 5% 10px 0;
   margin-top: 30px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  line-height: 2.5;
+}
+.head-button:hover {
+  color: hsl(186, 62%, 60%);
+  text-shadow: 1px 1px 2px black, 0 0 10px hsl(186, 62%, 80%);
 }
 .illustration {
   display: block;
@@ -190,7 +193,7 @@ p {
   border-radius: 8px;
   box-shadow: 0 3px 10px 0 hsl(219, 30%, 5%);
 }
-input {
+.mail-input {
   width: 58vw;
   max-width: 360px;
   height: 5.5vw;
@@ -198,13 +201,21 @@ input {
   border-radius: 30px;
   border-style: none;
   font-family: "Open Sans", sans-serif;
-  color: lightgrey;
-  font-weight: 400;
+  color: black;
+  font-weight: 600;
   padding: 14px 24px 12px;
   display: block;
   cursor: pointer;
   text-align: left;
   margin: 30px auto 0;
+  outline: none;
+}
+.mail-input::placeholder {
+  color: lightgrey;
+  font-weight: 400;
+}
+.mail-input:hover {
+  cursor: text;
 }
 .mail-button {
   width: 58vw;
@@ -212,6 +223,7 @@ input {
   height: 5.5vw;
   max-height: 30px;
   border-radius: 30px;
+  border-style: none;
   font-family: "Raleway", sans-serif;
   color: hsl(0, 0%, 100%);
   letter-spacing: 1px;
@@ -222,10 +234,16 @@ input {
   cursor: pointer;
   text-align: center;
   margin: 30px auto 0;
+  box-sizing: content-box;
   background: linear-gradient(to right, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+  outline: none;
 }
 .mail-button:hover {
   background: linear-gradient(to left, hsl(186, 62%, 60%), hsl(198, 60%, 50%));
+}
+.mail-button:active {
+  background: linear-gradient(to left, hsl(186, 62%, 40%), hsl(198, 60%, 30%));
+  box-shadow: 0 0 15px 0 black;
 }
 footer {
   padding-top: 240px;
@@ -235,6 +253,8 @@ footer {
 td {
   padding-right: 10px;
   vertical-align: top;
+  line-height: 1.6;
+  /*font-size: 1.1em;*/
 }
 .bottom-logo {
   display: block;
@@ -269,8 +289,12 @@ td {
 .bottom-box1 {
   margin-bottom: 16px;
 }
+.bottom-box2 {
+  margin-bottom: 50px;
+}
 .bottom-box5 {
   text-align: center;
+  margin-bottom: 0;
 }
 .sn-ico {
   width: 30px;
@@ -291,6 +315,10 @@ td {
   padding-bottom: 10px;
 }
 .attribution a {
-  color: hsl(198, 60%, 50%);
+  color: hsl(198, 60%, 70%);
 }
-/**/
+.attribution a:hover {
+  color: hsl(198, 60%, 50%);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 5px hsl(186, 62%, 80%);
+}
